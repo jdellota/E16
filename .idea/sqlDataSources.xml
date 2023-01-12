@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="f37695cc-fb2d-4643-80cd-072963f4f352" name="@localhost Mapping">
+      <data-sources db="3927880b-d938-4dc3-a184-bc50007cafd3" />
+      <scope>
+        <node kind="database" qname="School">
+          <node kind="schema" negative="1" />
+        </node>
+      </scope>
+    </mapping>
+    <mapping uuid="01215727-aeef-4fa3-8d59-172d63fc6bbe" name="School@localhost Mapping">
+      <data-sources db="4b73d81a-3e36-46fe-a4fb-87cdeb7c6e51" ddl="d338f9ec-3908-46a4-88e6-824add11b0a4" />
+      <scope>
+        <node kind="database" qname="School" />
+      </scope>
+    </mapping>
+  </component>
+</project>
