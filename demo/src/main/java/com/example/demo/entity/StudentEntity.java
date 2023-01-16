@@ -7,10 +7,29 @@ import jakarta.persistence.*;
 @Entity
 @Table(name="student")
 public class StudentEntity {
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String first_name;
+
+    private String last_name;
+    private String email;
+    private String course;
+    private String gpa;
+    public String getGpa() {
+        return gpa;
+    }
+
+    public void setGpa(String gpa) {
+        this.gpa = gpa;
+    }
+
+
+
 
     public String getFirst_name() {
         return first_name;
@@ -28,9 +47,6 @@ public class StudentEntity {
         this.last_name = last_name;
     }
 
-    private String last_name;
-    private String email;
-    private String course;
 
 
     public Integer getId() {

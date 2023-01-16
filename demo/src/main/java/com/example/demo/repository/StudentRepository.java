@@ -8,5 +8,7 @@ import java.util.List;
 
 @Repository
 public interface StudentRepository extends JpaRepository<StudentEntity,Long> {
-    List<StudentEntity> findById(int id);
+    StudentEntity findById(int id);
+    StudentEntity deleteById(long id);
+
 }
