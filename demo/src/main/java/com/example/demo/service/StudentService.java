@@ -49,7 +49,7 @@ public class StudentService {
 
 
     public String deleteStudent(int id) {
-        studentRepository.deleteById((long)id);
+        studentRepository.deleteById(id);
         return "deleted";
     }
 }

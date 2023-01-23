@@ -1,0 +1,12 @@
+CREATE DATABASE "16.2"
+
+CREATE TABLE student
+(
+    id integer NOT NULL DEFAULT nextval('student_id_seq'::regclass),
+    first_name character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    last_name character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    email character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    course character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    gpa character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT student_pkey PRIMARY KEY (id)
+)
